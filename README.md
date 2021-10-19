@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/ayitinya/frontend-mentor-tip-calculator-app.git)
 
 ## My process
 
@@ -52,6 +51,7 @@ Users should be able to:
 ```html
 <input type="number" />
 ```
+
 ```css
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -63,7 +63,8 @@ input[type="number"] {
 	-moz-appearance: textfield;
 }
 ```
-```
+
+````
 
 2. Using the ::placeholder pseudo-element to style input placeholders
 
@@ -71,7 +72,7 @@ input[type="number"] {
 .input::placeholder {
 	text-align: end;
 }
-```
+````
 
 3. Practiced flexbox more
 
@@ -79,7 +80,7 @@ input[type="number"] {
 
 ```css
 element {
-  box-sizing: border-box|content-box
+	box-sizing: border-box|content-box;
 }
 ```
 
