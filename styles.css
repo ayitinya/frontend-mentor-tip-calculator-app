@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+	font-family: "Space Mono";
+}
+
+body {
+	background-color: hsl(185, 41%, 84%);
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	color: hsl(183, 100%, 15%);
+}
+
+.splitter {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: hsl(182, 25%, 30%);
+}
+
+main {
+	position: relative;
+	background-color: hsl(0, 0%, 100%);
+	margin-top: auto;
+	padding: 1.5rem;
+	border-top-left-radius: 2.5rem;
+	border-top-right-radius: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	margin-left: auto;
+	display: none;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+fieldset {
+	border: none;
+	position: relative;
+}
+
+input[type="radio"] {
+	visibility: hidden;
+	position: absolute;
+}
+
+input:checked + button {
+	background-color: hsl(172, 67%, 45%);
+}
+
+ul {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	padding: 0;
+}
+
+li label {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	border: 0;
+	width: 100%;
+	padding: 0;
+	background-color: hsl(183, 100%, 15%);
+	height: 2.5rem;
+	border-radius: 0.5rem;
+	color: hsl(0, 0%, 100%);
+	font-size: 1.5rem;
+}
+.custom-tip-button {
+	padding: 0;
+}
+
+button[type="reset"] {
+	background-color: hsl(172, 69%, 45%);
+}
+
+#custom-tip {
+	height: 100%;
+	width: 100%;
+	border: none;
+	padding: 0 1rem;
+	background-color: hsl(206, 47%, 97%);
+	color: hsl(183, 100%, 15%);
+	font-size: 1.25rem;
+	text-align: end;
+}
+
+#custom-tip::placeholder {
+	color: hsl(186, 14%, 43%);
+	font-size: 1rem;
+	text-align: center;
+}
+
+input[type="number"]:focus {
+	outline: hsl(172, 67%, 45%) solid 2px;
+	border-radius: 0.5rem;
+}
+
+.display-section {
+	background-color: hsl(183, 100%, 15%);
+	padding: 1.5rem;
+	min-height: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 1rem;
+}
+
+.tip-amount {
+	margin-top: 1rem;
+}
+
+.tip-amount,
+.total-tip {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	color: hsl(0, 0%, 100%);
+}
+
+.text small {
+	color: hsl(184, 23%, 51%);
+}
+
+.amount {
+	color: hsl(172, 67%, 45%);
+	font-size: 2rem;
+}
+
+button[type="reset"] {
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(175, 100%, 19%);
+}
+
+button[type="reset"]:disabled {
+	background-color: hsl(183, 79%, 24%);
+}
+button[type="reset"]:disabled:hover {
+	background-color: hsl(183, 79%, 24%);
+}
+
+button[type="reset"]:hover {
+	background-color: hsl(173, 61%, 77%);
+}
+
+.input {
+	width: 100%;
+	height: 2.5rem;
+	padding: 0 1rem;
+	border: none;
+	border-radius: 1rem;
+	color: hsl(183, 100%, 15%);
+	font-size: 1.5rem;
+	text-align: end;
+	box-sizing: border-box;
+}
+
+.input:invalid {
+	outline: red solid 2px !important;
+}
+
+.input::placeholder {
+	text-align: end;
+}
+
+.input:active {
+	outline: none;
+}
+
+input[type="text"],
+input[type="number"] {
+	background-color: hsl(202, 50%, 97%);
+	font-weight: bold;
+}
+
+.icon {
+	position: absolute;
+	left: 34px !important;
+	top: 17px !important;
+	color: hsl(184, 14%, 56%);
+}
+
+.outputs {
+	height: 100%;
+}
+
+.total-tip {
+	margin-top: 2rem;
+}
+
+.input-section > fieldset:nth-child(1) {
+	margin-bottom: 2rem;
+}
+
+.input-section > fieldset:nth-child(3) {
+	margin-top: 1rem;
+}
+
+#error-span {
+	color: red;
+	visibility: hidden;
+}
+
+.people-legend {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+button:hover,
+input:hover,
+.radio-button-label:hover {
+	cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+@media (min-width: 810px) {
+	.attribution {
+		display: unset;
+	}
+
+	body {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.splitter {
+		height: fit-content;
+		margin-bottom: 5rem;
+	}
+
+	main {
+		all: unset;
+		background-color: hsl(0, 0%, 100%);
+		padding: 1.5rem;
+		border-radius: 2.5rem;
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		position: relative;
+	}
+
+	section {
+		width: 50%;
+	}
+
+	.radio-buttons {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 1440px) {
+	main {
+		width: 50%;
+	}
+}
